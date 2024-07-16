@@ -1,3 +1,0 @@
-# Set Wifi SSID and password here in quotes
-CONFIG_EXAMPLE_WIFI_SSID="My Wifi Network"
-CONFIG_EXAMPLE_WIFI_PASSWORD="password"
