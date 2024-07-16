@@ -95,9 +95,9 @@ Other commands:
   
     Configure the Ubuntu machine not to prompt "are you sure?" on ACPI button shutdowns:
 
-        ```sh
-    $ gsettings set org.gnome.SessionManager logout-prompt false
-    ```
+      ```sh
+      $ gsettings set org.gnome.SessionManager logout-prompt false
+      ```
 
     Source:  [askubuntu.com/questions/1272300/how-to-disable-shutdown-confirmation-on-ubuntu-20-04](https://askubuntu.com/questions/1272300/how-to-disable-shutdown-confirmation-on-ubuntu-20-04)
 
