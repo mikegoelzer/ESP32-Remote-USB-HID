@@ -213,7 +213,7 @@
 		(layers "F.Cu" "F.Paste" "F.Mask")
 		(uuid "7d63f1af-ae85-49a7-81d7-603994c3e60e")
 	)
-	(model "/Users/mwg/code/EE Projects 2022-/ESP32-Aorus-Control/Parts/JST SH Series Receptacle Vertical - BM04B-SRSS-TB_LF_SN/BM04B-SRSS-TB_LF__SN_/3D/BM04B-SRSS-TB_LF__SN_.stp"
+	(model "/Users/mwg/code/EE Projects 2022-/ESP32-Remote-USB-HID/Parts/JST SH Series Receptacle Vertical - BM04B-SRSS-TB_LF_SN/BM04B-SRSS-TB_LF__SN_/3D/BM04B-SRSS-TB_LF__SN_.stp"
 		(offset
 			(xyz 54.31000056 13.10000018 -20.45000046)
 		)

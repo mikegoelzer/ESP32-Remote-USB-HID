@@ -158,7 +158,7 @@
 		(solder_mask_margin 0.102)
 		(uuid "5d6fd8be-e728-49bf-9236-c8ed23f7eb5b")
 	)
-	(model "/Users/mwg/code/EE Projects 2022-/ESP32-Aorus-Control/Parts/DFE201610E_R47M_P2/DFE201610E-R47M_P2.step"
+	(model "/Users/mwg/code/EE Projects 2022-/ESP32-Remote-USB-HID/Parts/DFE201610E_R47M_P2/DFE201610E-R47M_P2.step"
 		(offset
 			(xyz 0 -0.5 0.5)
 		)
