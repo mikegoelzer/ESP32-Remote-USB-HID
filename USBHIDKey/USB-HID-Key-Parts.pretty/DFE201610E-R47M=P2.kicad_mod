@@ -1,0 +1,172 @@
+(footprint "DFE201610E-R47M=P2"
+	(version 20240108)
+	(generator "pcbnew")
+	(generator_version "8.0")
+	(layer "F.Cu")
+	(descr "DFE201610E-R47M=P2")
+	(tags "Murata inductor DFE201610E")
+	(property "Reference" "REF**"
+		(at -0.46 -1.5 0)
+		(layer "F.SilkS")
+		(uuid "ed8c1238-5ffd-4917-a3c9-33eff14223f8")
+		(effects
+			(font
+				(size 0.393701 0.393701)
+				(thickness 0.098425)
+			)
+		)
+	)
+	(property "Value" "DFE201610E-R47M=P2"
+		(at 1.54 1.5 0)
+		(layer "F.Fab")
+		(uuid "37bc173d-0899-4772-acfb-e7f9a49c8341")
+		(effects
+			(font
+				(size 0.393701 0.393701)
+				(thickness 0.098425)
+			)
+		)
+	)
+	(property "Footprint" ""
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "ae7c8e3c-971b-4c3e-9493-851eb8a34b29")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(property "Datasheet" ""
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "4a198a38-7a4d-460e-8bac-c0f029e4f807")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(property "Description" ""
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "226e2561-5f49-4ace-8656-7d2fa62c2a29")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(attr smd)
+	(fp_line
+		(start -1.708 -1.158)
+		(end 1.708 -1.158)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "2fc6f295-3ee1-4a31-be58-ea6fec234a05")
+	)
+	(fp_line
+		(start -1.708 1.158)
+		(end -1.708 -1.158)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "9d31db85-9c21-40c8-923c-ad65eb63b136")
+	)
+	(fp_line
+		(start -1.708 1.158)
+		(end 1.708 1.158)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "29f3df03-5731-46b7-81fd-ec568d22e33f")
+	)
+	(fp_line
+		(start 1.708 1.158)
+		(end 1.708 -1.158)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "7034a81d-41fd-4f68-969e-5c6f99041aee")
+	)
+	(fp_line
+		(start -1.1 0.9)
+		(end -1.1 -0.9)
+		(stroke
+			(width 0.127)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "6227c1e9-74cb-4d6f-99b2-3d09019aecde")
+	)
+	(fp_line
+		(start 1.1 -0.9)
+		(end -1.1 -0.9)
+		(stroke
+			(width 0.127)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "0332b20d-b9f2-4921-9589-7e3e48bd2271")
+	)
+	(fp_line
+		(start 1.1 0.9)
+		(end -1.1 0.9)
+		(stroke
+			(width 0.127)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "bc0455bd-b976-4bb0-a8ea-d4939a31994d")
+	)
+	(fp_line
+		(start 1.1 0.9)
+		(end 1.1 -0.9)
+		(stroke
+			(width 0.127)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "2c4684b2-a305-46f6-b4f8-bb7ab2f733ea")
+	)
+	(pad "1" smd rect
+		(at -0.86 0)
+		(size 1.2 1.82)
+		(layers "F.Cu" "F.Paste" "F.Mask")
+		(solder_mask_margin 0.102)
+		(uuid "3c3e9e46-3fa0-4211-b1ce-476c5942cdee")
+	)
+	(pad "2" smd rect
+		(at 0.86 0)
+		(size 1.2 1.82)
+		(layers "F.Cu" "F.Paste" "F.Mask")
+		(solder_mask_margin 0.102)
+		(uuid "5d6fd8be-e728-49bf-9236-c8ed23f7eb5b")
+	)
+	(model "/Users/mwg/code/EE Projects 2022-/ESP32-Aorus-Control/Parts/DFE201610E_R47M_P2/DFE201610E-R47M_P2.step"
+		(offset
+			(xyz 0 -0.5 0.5)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz 0 0 0)
+		)
+	)
+)

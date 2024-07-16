@@ -1,0 +1,11 @@
+FILE_TYPE = MULTI_PHYS_TABLE;
+
+PART 'BM04B_SRSS_TB_LF__SN_'
+CLASS = IO
+{========================================================================================}
+:"MANUFACTURER_NAME", "MANUFACTURER_PART_NUMBER"= "PART_NUMBER", "JEDEC_TYPE", "PACK_TYPE", "NEWARK_PART_NUMBER", "NEWARK_PRICE/STOCK", "DESCRIPTION", "DATASHEET";
+{========================================================================================}
+ "JST (JAPAN SOLDERLESS TERMINALS)", "BM04B-SRSS-TB(LF)(SN)" (!) = "", "BM04B-SRSS-TB(LFSN)", "Other", "", "", "JST (JAPAN SOLDERLESS TERMINALS) - BM04B-SRSS-TB(LF)(SN) - HEADER, TOP ENTRY, 4WAY", "http://www.jst.fr/core/file.get?path=doc/jst/family/pdf/eSH.pdf"
+END_PART
+
+END.

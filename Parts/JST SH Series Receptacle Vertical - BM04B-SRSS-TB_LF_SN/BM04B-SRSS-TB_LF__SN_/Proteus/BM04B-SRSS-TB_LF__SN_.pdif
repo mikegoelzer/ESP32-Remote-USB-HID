@@ -1,0 +1,138 @@
+;Proteus Design Interchange Format
+(PDIF
+ (vendor "SamacSys Limited")
+ (version 1 0)
+ (library
+  (part "BM04B-SRSS-TB_LF__SN_"
+   (description "JST (JAPAN SOLDERLESS TERMINALS) - BM04B-SRSS-TB(LF)(SN) - HEADER, TOP ENTRY, 4WAY")
+   (family "CON")
+   (package "BM04B-SRSS-TB(LFSN)")
+   (attribute "Datasheet Link" "http://www.jst.fr/core/file.get?path=doc/jst/family/pdf/eSH.pdf")
+   (attribute "Newark Part Number" "")
+   (attribute "Newark Price/Stock" "")
+   (attribute "Manufacturer_Name" "JST (JAPAN SOLDERLESS TERMINALS)")
+   (attribute "Manufacturer_Part_Number" "BM04B-SRSS-TB(LF)(SN)")
+   (gate
+    (symbol "BM04B-SRSS-TB_LF__SN_")
+    (pin "1" 1 PS)
+    (pin "2" 2 PS)
+    (pin "3" 3 PS)
+    (pin "4" 4 PS)
+   )
+  )
+  (symbol "BM04B-SRSS-TB_LF__SN_"
+   (units THOU)
+   (origin (pt 0 0))
+   (graphic
+    (stroke 10)
+    (path (pt 200 100) (pt 600 100) (pt 600 -200) (pt 200 -200) (pt 200 100) (closed))
+   )
+   (terminal
+    (body (symbol "PIN") (pt 0 0) (rot 0) (mir 0) (visible true))
+    (name (pt 230 0) (rot 0) (just MIDDLE LEFT) (visible true))
+    (number (pt 140 20) (rot 0) (just BOTTOM RIGHT) (visible true)))
+   (terminal
+    (body (symbol "PIN") (pt 0 -100) (rot 0) (mir 0) (visible true))
+    (name (pt 230 0) (rot 0) (just MIDDLE LEFT) (visible true))
+    (number (pt 140 20) (rot 0) (just BOTTOM RIGHT) (visible true)))
+   (terminal
+    (body (symbol "PIN") (pt 800 0) (rot 0) (mir X) (visible true))
+    (name (pt 230 0) (rot 0) (just MIDDLE LEFT) (visible true))
+    (number (pt 140 20) (rot 0) (just BOTTOM RIGHT) (visible true)))
+   (terminal
+    (body (symbol "PIN") (pt 800 -100) (rot 0) (mir X) (visible true))
+    (name (pt 230 0) (rot 0) (just MIDDLE LEFT) (visible true))
+    (number (pt 140 20) (rot 0) (just BOTTOM RIGHT) (visible true)))
+  )
+  (symbol "PIN"
+   (units THOU)
+   (origin (pt 0 0))
+   (graphic
+    (stroke 10)
+    (path (pt 0 0) (pt 200 0))))
+  (symbol "PINSHORT"
+   (units THOU)
+   (origin (pt 0 0))
+   (graphic
+    (stroke 10)
+    (path (pt 0 0) (pt 100 0))))
+  (package "BM04B-SRSS-TB(LFSN)"
+   (units MM)
+   (layer TASM
+    (graphic
+     (stroke 0.254)
+     (path
+      (closed true)
+      (pt 0 2.8)
+      (pt 6 2.8)
+      (pt 6 -0.1)
+      (pt 0 -0.1)
+      (pt 0 2.8))))
+   (layer TSLK
+    (graphic
+     (stroke 0.254)
+     (path
+      (closed false)
+      (pt 1.113 2.8)
+      (pt 4.901 2.8))))
+   (layer TSLK
+    (graphic
+     (stroke 0.254)
+     (path
+      (closed false)
+      (pt 0 0)
+      (pt 0 0.928))))
+   (layer TSLK
+    (graphic
+     (stroke 0.254)
+     (path
+      (closed false)
+      (pt 0 -0.1)
+      (pt 0.987 -0.1))))
+   (layer TSLK
+    (graphic
+     (stroke 0.254)
+     (path
+      (closed false)
+      (pt 6 -0.1)
+      (pt 6 1.009))))
+   (layer TSLK
+    (graphic
+     (stroke 0.254)
+     (path
+      (closed false)
+      (pt 6 -0.1)
+      (pt 4.955 -0.1))))
+   (layer TSLK
+    (graphic
+     (stroke 0.254)
+     (circle
+      (pt 0.626 -1.219) (pt 0.752 -1.219)
+     )
+    )
+   )
+   (leg 1 (pt 1.5 -0.45) (padstack 0))
+   (leg 2 (pt 2.5 -0.45) (padstack 0))
+   (leg 3 (pt 3.5 -0.45) (padstack 0))
+   (leg 4 (pt 4.5 -0.45) (padstack 0))
+   (leg 5 (pt 0.2 2.075) (padstack 5))
+   (leg 6 (pt 5.8 2.075) (padstack 6))
+   (padstack 0
+    (plated false)
+    (pad (layer TCOP) (rectf 0.6 1.55 0 0 90))
+   )
+   (padstack 5
+    (plated false)
+    (pad (layer TCOP) (rectf 1.2 1.8 0 0 90))
+   )
+   (padstack 6
+    (plated false)
+    (pad (layer TCOP) (rectf 1.2 1.8 0 0 90))
+   )
+   (model "BM04B-SRSS-TB_LF__SN_.stp"
+    (euler 90 0 0)
+    (offset 54.310001373291016 13.100000381469727 -20.450000762939453)
+   )
+  )
+ )
+)

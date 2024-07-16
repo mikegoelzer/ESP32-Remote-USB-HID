@@ -1,0 +1,2275 @@
+(kicad_sch
+	(version 20231120)
+	(generator "eeschema")
+	(generator_version "8.0")
+	(uuid "a89dfb19-e5f5-40ef-8ff3-915d098ccab5")
+	(paper "A4")
+	(lib_symbols
+		(symbol "KicadParts:JST SH 4-pin Vert - BM04B-SRSS-TB_LF__SN_"
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "J"
+				(at 16.51 7.62 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left top)
+				)
+			)
+			(property "Value" "JST SH 4-pin Vert - BM04B-SRSS-TB_LF__SN_"
+				(at 16.51 5.08 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left top)
+				)
+			)
+			(property "Footprint" "BM04B-SRSS-TB(LFSN)"
+				(at 16.51 -94.92 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left top)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "http://www.jst.fr/core/file.get?path=doc/jst/family/pdf/eSH.pdf"
+				(at 16.51 -194.92 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left top)
+					(hide yes)
+				)
+			)
+			(property "Description" "JST (JAPAN SOLDERLESS TERMINALS) - BM04B-SRSS-TB(LF)(SN) - HEADER, TOP ENTRY, 4WAY"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Height" ""
+				(at 16.51 -394.92 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left top)
+					(hide yes)
+				)
+			)
+			(property "Newark Part Number" ""
+				(at 16.51 -494.92 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left top)
+					(hide yes)
+				)
+			)
+			(property "Newark Price/Stock" ""
+				(at 16.51 -594.92 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left top)
+					(hide yes)
+				)
+			)
+			(property "Manufacturer_Name" "JST (JAPAN SOLDERLESS TERMINALS)"
+				(at 16.51 -694.92 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left top)
+					(hide yes)
+				)
+			)
+			(property "Manufacturer_Part_Number" "BM04B-SRSS-TB(LF)(SN)"
+				(at 16.51 -794.92 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left top)
+					(hide yes)
+				)
+			)
+			(symbol "JST SH 4-pin Vert - BM04B-SRSS-TB_LF__SN__1_1"
+				(rectangle
+					(start 5.08 2.54)
+					(end 15.24 -5.08)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+				(pin passive line
+					(at 0 0 0)
+					(length 5.08)
+					(name "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -2.54 0)
+					(length 5.08)
+					(name "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 20.32 0 180)
+					(length 5.08)
+					(name "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 20.32 -2.54 180)
+					(length 5.08)
+					(name "4"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "4"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+		)
+		(symbol "KicadParts:SAMTEC-SMH-110-02-X-D"
+			(pin_names
+				(offset 1.016)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "J"
+				(at 0 5.08 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left bottom)
+				)
+			)
+			(property "Value" "SAMTEC-SMH-110-02-X-D"
+				(at 0 -33.02 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left bottom)
+				)
+			)
+			(property "Footprint" "Kicad Parts:SAMTEC-SMH-110-02-X-D"
+				(at -0.762 -41.91 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify bottom)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "https://mm.digikey.com/Volume0/opasdata/d220001/medias/docus/6129/smh-1xx-xx-xx-x-xx-xx-mkt.pdf"
+				(at 0.508 -44.196 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "2x20 right angle pin header female"
+				(at -1.27 -52.324 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Order" "https://www.digikey.com/en/products/detail/samtec-inc/SMH-110-02-L-D/6693507"
+				(at 0.254 -48.514 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_keywords" "pin header 2x20 right angle 0.1\" 2.54mm"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "SAMTEC-SMH-110-02-X-D_0_0"
+				(rectangle
+					(start 0 -27.94)
+					(end 20.3 5.08)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+				(pin passive line
+					(at -5.08 0 0)
+					(length 5.08)
+					(name "1"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 25.4 -10.16 180)
+					(length 5.08)
+					(name "10"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+					(number "10"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -5.08 -12.7 0)
+					(length 5.08)
+					(name "11"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+					(number "11"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 25.4 -12.7 180)
+					(length 5.08)
+					(name "12"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+					(number "12"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -5.08 -15.24 0)
+					(length 5.08)
+					(name "13"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+					(number "13"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 25.4 -15.24 180)
+					(length 5.08)
+					(name "14"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+					(number "14"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -5.08 -17.78 0)
+					(length 5.08)
+					(name "15"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+					(number "15"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 25.4 -17.78 180)
+					(length 5.08)
+					(name "16"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+					(number "16"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -5.08 -20.32 0)
+					(length 5.08)
+					(name "17"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+					(number "17"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 25.4 -20.32 180)
+					(length 5.08)
+					(name "18"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+					(number "18"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -5.08 -22.86 0)
+					(length 5.08)
+					(name "19"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+					(number "19"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 25.4 0 180)
+					(length 5.08)
+					(name "2"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 25.4 -22.86 180)
+					(length 5.08)
+					(name "20"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+					(number "20"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -5.08 -2.54 0)
+					(length 5.08)
+					(name "3"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 25.4 -2.54 180)
+					(length 5.08)
+					(name "4"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+					(number "4"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -5.08 -5.08 0)
+					(length 5.08)
+					(name "5"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+					(number "5"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 25.4 -5.08 180)
+					(length 5.08)
+					(name "6"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+					(number "6"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -5.08 -7.62 0)
+					(length 5.08)
+					(name "7"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+					(number "7"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 25.4 -7.62 180)
+					(length 5.08)
+					(name "8"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+					(number "8"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -5.08 -10.16 0)
+					(length 5.08)
+					(name "9"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+					(number "9"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+				)
+			)
+		)
+		(symbol "KicadParts:SAMTEC-TSM-110-02-L-DH"
+			(pin_names
+				(offset 1.016)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "J"
+				(at -8.12 15.24 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left bottom)
+				)
+			)
+			(property "Value" "SAMTEC-TSM-110-02-L-DH"
+				(at -7.62 -15.24 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left bottom)
+				)
+			)
+			(property "Footprint" "Kicad Parts:SAMTEC_TSM-110-02-L-DH"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify bottom)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "https://mm.digikey.com/Volume0/opasdata/d220001/medias/docus/6129/tsm-1xx-xx-xxx-xx-xx-xxx-xx-mkt1.pdf"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "2x20 0.1\" right angle male pin header"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "PARTREV" "R"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify bottom)
+					(hide yes)
+				)
+			)
+			(property "STANDARD" "Manufacturer Recommendations"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify bottom)
+					(hide yes)
+				)
+			)
+			(property "MANUFACTURER" "Samtec"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify bottom)
+					(hide yes)
+				)
+			)
+			(property "Order" "https://www.digikey.com/en/products/detail/samtec-inc/TSM-110-02-L-DH/6692964"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_keywords" "connector 0.1 2.54mm pin header"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "SAMTEC-TSM-110-02-L-DH_0_0"
+				(rectangle
+					(start -7.62 -12.7)
+					(end 7.62 15.24)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+				(pin passive line
+					(at -12.7 12.7 0)
+					(length 5.08)
+					(name "01"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+					(number "01"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 12.7 12.7 180)
+					(length 5.08)
+					(name "02"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+					(number "02"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -12.7 10.16 0)
+					(length 5.08)
+					(name "03"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+					(number "03"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 12.7 10.16 180)
+					(length 5.08)
+					(name "04"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+					(number "04"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -12.7 7.62 0)
+					(length 5.08)
+					(name "05"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+					(number "05"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 12.7 7.62 180)
+					(length 5.08)
+					(name "06"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+					(number "06"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -12.7 5.08 0)
+					(length 5.08)
+					(name "07"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+					(number "07"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 12.7 5.08 180)
+					(length 5.08)
+					(name "08"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+					(number "08"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -12.7 2.54 0)
+					(length 5.08)
+					(name "09"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+					(number "09"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 12.7 2.54 180)
+					(length 5.08)
+					(name "10"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+					(number "10"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -12.7 0 0)
+					(length 5.08)
+					(name "11"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+					(number "11"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 12.7 0 180)
+					(length 5.08)
+					(name "12"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+					(number "12"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -12.7 -2.54 0)
+					(length 5.08)
+					(name "13"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+					(number "13"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 12.7 -2.54 180)
+					(length 5.08)
+					(name "14"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+					(number "14"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -12.7 -5.08 0)
+					(length 5.08)
+					(name "15"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+					(number "15"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 12.7 -5.08 180)
+					(length 5.08)
+					(name "16"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+					(number "16"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -12.7 -7.62 0)
+					(length 5.08)
+					(name "17"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+					(number "17"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 12.7 -7.62 180)
+					(length 5.08)
+					(name "18"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+					(number "18"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -12.7 -10.16 0)
+					(length 5.08)
+					(name "19"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+					(number "19"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 12.7 -10.16 180)
+					(length 5.08)
+					(name "20"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+					(number "20"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+				)
+			)
+		)
+	)
+	(junction
+		(at 136.525 101.6)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "3c2d0761-1a5f-4cf9-a3f8-3b9a191d119e")
+	)
+	(junction
+		(at 197.485 105.41)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "cf7db041-b038-476b-b87e-6e2c50df41c9")
+	)
+	(junction
+		(at 191.77 99.06)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "d7e653c8-40a1-4eb3-9afe-a2fb31e2bb79")
+	)
+	(no_connect
+		(at 101.6 99.06)
+		(uuid "f2f4294f-f6cf-4edf-9e1e-bcea0a9285f2")
+	)
+	(wire
+		(pts
+			(xy 177.165 70.485) (xy 189.865 70.485)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0185675f-69f2-43f6-b918-0476eeb7d722")
+	)
+	(wire
+		(pts
+			(xy 177.165 80.645) (xy 182.245 80.645)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "06ee03f1-0296-4e1a-80ef-c468f104717b")
+	)
+	(wire
+		(pts
+			(xy 151.765 70.485) (xy 140.335 70.485)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "08ee0e4d-2d66-46e2-90da-77cdf43d50ea")
+	)
+	(wire
+		(pts
+			(xy 193.675 143.51) (xy 180.34 143.51)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "09853703-04a5-450e-83e8-a129e13f1d92")
+	)
+	(wire
+		(pts
+			(xy 189.865 70.485) (xy 189.865 138.43)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0a452eaf-eb0b-4e8d-8871-0fcbcd8719d6")
+	)
+	(wire
+		(pts
+			(xy 151.765 73.025) (xy 142.24 73.025)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "112c6b3b-cfcd-4052-809f-9f8ac229da42")
+	)
+	(wire
+		(pts
+			(xy 144.145 75.565) (xy 144.145 133.35)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "12d1d494-60e5-41d9-8649-7b8998d341cf")
+	)
+	(wire
+		(pts
+			(xy 147.955 80.645) (xy 147.955 128.27)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "13ddca21-d00d-4050-a11f-f7b73ea7abbc")
+	)
+	(wire
+		(pts
+			(xy 177.165 62.865) (xy 195.58 62.865)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1458a470-26f5-41c5-8b96-87dbd574e3e0")
+	)
+	(wire
+		(pts
+			(xy 177.165 78.105) (xy 184.15 78.105)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "15a807bc-2975-44d3-972c-7bbad602a09a")
+	)
+	(wire
+		(pts
+			(xy 177.165 67.945) (xy 191.77 67.945)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "17237b7d-8664-40ea-84cc-c9a9cf87afc8")
+	)
+	(wire
+		(pts
+			(xy 151.765 65.405) (xy 136.525 65.405)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "18dccaa3-29cb-4d2a-a3f5-e5548771d463")
+	)
+	(wire
+		(pts
+			(xy 177.165 65.405) (xy 193.675 65.405)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1dc73d1f-ec36-4b14-816f-cf56cb9df59f")
+	)
+	(wire
+		(pts
+			(xy 197.485 105.41) (xy 197.485 148.59)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "24401a46-b20f-41ed-bfc4-df81b47ef102")
+	)
+	(wire
+		(pts
+			(xy 193.675 65.405) (xy 193.675 143.51)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "28599ba8-2bf6-4981-b571-fa4d6b515acb")
+	)
+	(wire
+		(pts
+			(xy 186.055 75.565) (xy 186.055 133.35)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "299341ba-5f3c-476b-ae60-b24645158660")
+	)
+	(wire
+		(pts
+			(xy 177.165 75.565) (xy 186.055 75.565)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2cb15010-5379-48c7-b24b-af1f8c189a8d")
+	)
+	(wire
+		(pts
+			(xy 187.96 73.025) (xy 187.96 135.89)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2dd00ad5-fef6-4815-a72e-b8d1c3f6d169")
+	)
+	(wire
+		(pts
+			(xy 180.34 135.89) (xy 187.96 135.89)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3589d3fc-9e27-4fb0-baa2-7030e2179380")
+	)
+	(wire
+		(pts
+			(xy 191.77 67.945) (xy 191.77 99.06)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "38782d3b-f065-4c48-b4b8-eaf926133619")
+	)
+	(wire
+		(pts
+			(xy 140.335 138.43) (xy 149.86 138.43)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3d001089-59ed-4752-8cee-df8a7f57a564")
+	)
+	(wire
+		(pts
+			(xy 136.525 101.6) (xy 136.525 143.51)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3d0c72ba-5545-4532-ae95-f13b66cf7c98")
+	)
+	(wire
+		(pts
+			(xy 151.765 78.105) (xy 146.05 78.105)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3e8f53e1-2570-4bb2-a9da-172708d28815")
+	)
+	(wire
+		(pts
+			(xy 151.765 75.565) (xy 144.145 75.565)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "434f9697-0897-4f83-8a02-54a87fe3ab17")
+	)
+	(wire
+		(pts
+			(xy 132.715 148.59) (xy 149.86 148.59)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "43e752f0-6d11-4e11-8d1e-56ad882693b1")
+	)
+	(wire
+		(pts
+			(xy 136.525 143.51) (xy 149.86 143.51)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "44bce9a1-d5da-401d-bd7d-caab44df6122")
+	)
+	(wire
+		(pts
+			(xy 177.165 60.325) (xy 197.485 60.325)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "481272a3-3719-4da5-836a-4796c0a0129d")
+	)
+	(wire
+		(pts
+			(xy 191.77 99.06) (xy 191.77 140.97)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "49d500a6-19eb-433c-a87b-3dc63d88f93d")
+	)
+	(wire
+		(pts
+			(xy 121.92 101.6) (xy 136.525 101.6)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4c0298b8-c5a7-4c7c-949d-144b0af5b00c")
+	)
+	(wire
+		(pts
+			(xy 144.145 133.35) (xy 149.86 133.35)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "57da69fa-bb8c-4ced-9edd-d6ac7564b6df")
+	)
+	(wire
+		(pts
+			(xy 195.58 146.05) (xy 180.34 146.05)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "58e08c58-7af1-4b06-a225-7a04da6f99fd")
+	)
+	(wire
+		(pts
+			(xy 151.765 60.325) (xy 132.715 60.325)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5d01e04e-c7b7-4627-854f-5a5fd88e5187")
+	)
+	(wire
+		(pts
+			(xy 132.715 60.325) (xy 132.715 148.59)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "649c3782-76f5-4a79-9880-811d945740b5")
+	)
+	(wire
+		(pts
+			(xy 142.24 135.89) (xy 149.86 135.89)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "65080059-369f-4827-8dba-9dd15916e5bf")
+	)
+	(wire
+		(pts
+			(xy 134.62 62.865) (xy 134.62 146.05)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "66809a2c-8c3d-4150-9385-9c8da5af60a4")
+	)
+	(wire
+		(pts
+			(xy 151.765 62.865) (xy 134.62 62.865)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "672c4676-f7a1-44b6-9268-acc630425eef")
+	)
+	(wire
+		(pts
+			(xy 149.86 83.185) (xy 149.86 125.73)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6938aa0f-9b38-4df9-b7c5-cf428f39ad50")
+	)
+	(wire
+		(pts
+			(xy 182.245 80.645) (xy 182.245 128.27)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "75c2416c-f2e0-4f86-a0f7-3815a7bd239a")
+	)
+	(wire
+		(pts
+			(xy 151.765 83.185) (xy 149.86 83.185)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7dee92e6-3276-4e56-a458-22d4dc8a99f5")
+	)
+	(wire
+		(pts
+			(xy 197.485 60.325) (xy 197.485 105.41)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "968b05e4-30f3-4b8b-8692-06e41a235aaf")
+	)
+	(wire
+		(pts
+			(xy 138.43 67.945) (xy 138.43 140.97)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "96e054d6-567e-4d8e-a2df-ee944830ae07")
+	)
+	(wire
+		(pts
+			(xy 134.62 146.05) (xy 149.86 146.05)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9853ecb4-485d-42e9-bf8b-45cf74e44ff4")
+	)
+	(wire
+		(pts
+			(xy 121.92 99.06) (xy 191.77 99.06)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9a3d6d4e-9de0-46b7-a2ee-92bf2ff51500")
+	)
+	(wire
+		(pts
+			(xy 151.765 80.645) (xy 147.955 80.645)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9decc9a9-0b2b-4c4a-9ed5-57583796b3b9")
+	)
+	(wire
+		(pts
+			(xy 138.43 140.97) (xy 149.86 140.97)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a4a18cf9-5baa-4b81-b481-f977969eddbf")
+	)
+	(wire
+		(pts
+			(xy 180.34 83.185) (xy 180.34 125.73)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a797a738-d2cd-498b-bf09-6b91be42d77f")
+	)
+	(wire
+		(pts
+			(xy 189.865 138.43) (xy 180.34 138.43)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "abdf936a-6af1-4ffa-a228-838722411022")
+	)
+	(wire
+		(pts
+			(xy 147.955 128.27) (xy 149.86 128.27)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "acd271bf-4b6b-4f02-a473-5d9217085727")
+	)
+	(wire
+		(pts
+			(xy 197.485 148.59) (xy 180.34 148.59)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b179b7bb-6142-4c3e-8890-b46836a77ec0")
+	)
+	(wire
+		(pts
+			(xy 182.245 128.27) (xy 180.34 128.27)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b2769447-351c-4834-8762-6c0a2a878499")
+	)
+	(wire
+		(pts
+			(xy 101.6 101.6) (xy 101.6 105.41)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b825d7d8-9f37-4eea-9e40-60baf82ffe10")
+	)
+	(wire
+		(pts
+			(xy 195.58 62.865) (xy 195.58 146.05)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b89efac1-1b74-4fef-adf5-fb39f1ead9dc")
+	)
+	(wire
+		(pts
+			(xy 191.77 140.97) (xy 180.34 140.97)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "bd9c9eba-1f61-4f30-9655-83350989af74")
+	)
+	(wire
+		(pts
+			(xy 136.525 65.405) (xy 136.525 101.6)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c0ce40cd-6326-454a-84f1-b984c064585e")
+	)
+	(wire
+		(pts
+			(xy 184.15 78.105) (xy 184.15 130.81)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c7f95874-6b26-4934-9fbe-9b4fb4ef6bcc")
+	)
+	(wire
+		(pts
+			(xy 151.765 67.945) (xy 138.43 67.945)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "cb1af822-f042-4247-90a4-8fa649ffbed2")
+	)
+	(wire
+		(pts
+			(xy 146.05 130.81) (xy 149.86 130.81)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d8caf12a-1166-4aa5-8f20-7eb171902ead")
+	)
+	(wire
+		(pts
+			(xy 146.05 78.105) (xy 146.05 130.81)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d923823c-571a-464e-a0f7-09a65f682cc5")
+	)
+	(wire
+		(pts
+			(xy 177.165 83.185) (xy 180.34 83.185)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "db8e9531-effe-43dc-a1fe-18e5a9b5b404")
+	)
+	(wire
+		(pts
+			(xy 177.165 73.025) (xy 187.96 73.025)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e83b7444-486b-4b2a-9f14-c2bf4a512240")
+	)
+	(wire
+		(pts
+			(xy 180.34 130.81) (xy 184.15 130.81)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e9535e60-eb0e-463c-92b2-c6e1e5479d25")
+	)
+	(wire
+		(pts
+			(xy 101.6 105.41) (xy 197.485 105.41)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "eb26b9e7-6328-420c-b014-c5d607a0f8dd")
+	)
+	(wire
+		(pts
+			(xy 142.24 73.025) (xy 142.24 135.89)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f24b0a1c-13f4-4b71-a846-b1f8de018326")
+	)
+	(wire
+		(pts
+			(xy 186.055 133.35) (xy 180.34 133.35)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f5315144-0011-41f3-8f3d-77eacfb6b0f8")
+	)
+	(wire
+		(pts
+			(xy 140.335 70.485) (xy 140.335 138.43)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ff3a6543-404c-4786-a2ed-918bad07a75a")
+	)
+	(text "F_PANEL Shim"
+		(exclude_from_sim no)
+		(at 225.806 174.244 0)
+		(effects
+			(font
+				(size 6.35 6.35)
+				(thickness 1.27)
+				(bold yes)
+			)
+		)
+		(uuid "2faa6a32-c726-46fa-a069-501f6fda0f14")
+	)
+	(text "(male facing up)"
+		(exclude_from_sim no)
+		(at 165.354 88.138 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "3560c903-6303-4b3b-b75f-fd0470bcdc77")
+	)
+	(text "(female facing up)"
+		(exclude_from_sim no)
+		(at 164.592 156.464 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "84c138ad-1bd8-4b94-9ca4-7ce29fc53d67")
+	)
+	(label "RES+"
+		(at 125.73 99.06 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "5c138921-a0fd-42c8-a624-b14fb8c66f70")
+	)
+	(label "PWR+"
+		(at 125.73 101.6 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "72bcb27a-0c06-4545-b010-40d204887403")
+	)
+	(label "HD+"
+		(at 126.365 105.41 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "d8107982-3180-4c8b-b85b-1340d45a0402")
+	)
+	(symbol
+		(lib_id "KicadParts:SAMTEC-SMH-110-02-X-D")
+		(at 175.26 148.59 180)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "26917743-49de-4cf0-9867-d52596070424")
+		(property "Reference" "J2"
+			(at 164.465 115.443 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "SAMTEC-SMH-110-02-X-D"
+			(at 164.973 118.491 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Kicad Parts:SAMTEC-SMH-110-02-X-D"
+			(at 175.26 148.59 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://mm.digikey.com/Volume0/opasdata/d220001/medias/docus/6129/smh-1xx-xx-xx-x-xx-xx-mkt.pdf"
+			(at 175.26 148.59 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "2x20 right angle pin header female"
+			(at 175.26 148.59 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Order" "https://www.digikey.com/en/products/detail/samtec-inc/SMH-110-02-L-D/6693507"
+			(at 150.3585 109.855 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "13"
+			(uuid "3005f928-29ed-4360-9d5f-19fb43d22d57")
+		)
+		(pin "10"
+			(uuid "a2fb4e55-a195-46c8-96d8-4deca6210874")
+		)
+		(pin "1"
+			(uuid "2ecf1847-04f3-40db-a564-eed7269457aa")
+		)
+		(pin "17"
+			(uuid "80f657b7-20db-4965-b49e-46b8106a522c")
+		)
+		(pin "19"
+			(uuid "68b6053c-bc0b-418d-a53f-349de6ec5eb5")
+		)
+		(pin "20"
+			(uuid "750d55d9-07ea-475a-9dbe-c668bea67ebc")
+		)
+		(pin "2"
+			(uuid "fad388f3-e902-48e1-9153-33bc6c86bdcd")
+		)
+		(pin "18"
+			(uuid "a65b0198-8451-41d7-995f-47bc621eef98")
+		)
+		(pin "12"
+			(uuid "ad08c425-3ee6-4168-88d5-8db017166bad")
+		)
+		(pin "6"
+			(uuid "b8afd721-aa77-439b-91de-9bf64e178f15")
+		)
+		(pin "11"
+			(uuid "f3fdfc21-4098-47b5-a6cd-7c1ab5f3f359")
+		)
+		(pin "7"
+			(uuid "c312ce6c-1cd2-41f5-aeed-42d2baf1c453")
+		)
+		(pin "8"
+			(uuid "bf35d8dc-c5f5-42ee-8b41-b09be8ce1cad")
+		)
+		(pin "5"
+			(uuid "c43a5323-6f2e-44c3-9833-b8a91b62f789")
+		)
+		(pin "4"
+			(uuid "9cb5f10f-9247-452f-b779-ae4615cd47e0")
+		)
+		(pin "3"
+			(uuid "73365fec-02bb-4177-93b0-80979932a65a")
+		)
+		(pin "9"
+			(uuid "137055c2-011a-4606-9b79-e1c7fbd83f33")
+		)
+		(pin "14"
+			(uuid "21b9d1c5-8774-4265-a610-64b5f1d57630")
+		)
+		(pin "16"
+			(uuid "102695cc-3453-4e0e-bb8b-bc69593a72ad")
+		)
+		(pin "15"
+			(uuid "6f42d695-bf4c-403a-9660-381969431454")
+		)
+		(instances
+			(project "F_PANEL Shim"
+				(path "/a89dfb19-e5f5-40ef-8ff3-915d098ccab5"
+					(reference "J2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "KicadParts:JST SH 4-pin Vert - BM04B-SRSS-TB_LF__SN_")
+		(at 121.92 101.6 180)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "2a318afa-b00d-40af-9440-63e01268e1ad")
+		(property "Reference" "J1"
+			(at 111.76 91.44 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "BM04B-SRSS-TB"
+			(at 111.76 93.98 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Kicad Parts:JST SH - BM04B-SRSS-TB_LFSN_"
+			(at 105.41 6.68 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "http://www.jst.fr/core/file.get?path=doc/jst/family/pdf/eSH.pdf"
+			(at 105.41 -93.32 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Description" "JST (JAPAN SOLDERLESS TERMINALS) - BM04B-SRSS-TB(LF)(SN) - HEADER, TOP ENTRY, 4WAY"
+			(at 121.92 101.6 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Height" ""
+			(at 105.41 -293.32 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Newark Part Number" ""
+			(at 105.41 -393.32 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Newark Price/Stock" ""
+			(at 105.41 -493.32 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Name" "JST (JAPAN SOLDERLESS TERMINALS)"
+			(at 105.41 -593.32 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Part_Number" "BM04B-SRSS-TB(LF)(SN)"
+			(at 105.41 -693.32 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "75325433-e216-42c1-acb1-2bab47729d48")
+		)
+		(pin "2"
+			(uuid "48ea7de2-6a9f-40fe-a43d-db00bf02fb60")
+		)
+		(pin "4"
+			(uuid "4dbb38c8-cda7-40a0-892c-a7a4bda94150")
+		)
+		(pin "3"
+			(uuid "71e14132-c43c-4710-998a-f480f3417f45")
+		)
+		(instances
+			(project "F_PANEL Shim"
+				(path "/a89dfb19-e5f5-40ef-8ff3-915d098ccab5"
+					(reference "J1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "KicadParts:SAMTEC-TSM-110-02-L-DH")
+		(at 164.465 73.025 0)
+		(mirror y)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "503a007c-936b-4df2-bdbb-5b7b6e190cfa")
+		(property "Reference" "J3"
+			(at 164.465 53.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "SAMTEC-TSM-110-02-L-DH"
+			(at 164.465 55.88 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Kicad Parts:SAMTEC_TSM-110-02-L-DH"
+			(at 164.465 73.025 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://mm.digikey.com/Volume0/opasdata/d220001/medias/docus/6129/tsm-1xx-xx-xxx-xx-xx-xxx-xx-mkt1.pdf"
+			(at 164.465 73.025 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "2x20 0.1\" right angle male pin header"
+			(at 164.465 73.025 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "PARTREV" "R"
+			(at 164.465 73.025 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "STANDARD" "Manufacturer Recommendations"
+			(at 164.465 73.025 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "MANUFACTURER" "Samtec"
+			(at 164.465 73.025 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "Order" "https://www.digikey.com/en/products/detail/samtec-inc/TSM-110-02-L-DH/6692964"
+			(at 164.465 55.88 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "01"
+			(uuid "d2d3ae03-7ff4-4d09-aff4-b8a1427da3a1")
+		)
+		(pin "06"
+			(uuid "14900f10-fa1b-45a8-b49e-39bc5f3de0b0")
+		)
+		(pin "07"
+			(uuid "da5016a3-0754-4f42-9c2e-0538bd452e51")
+		)
+		(pin "08"
+			(uuid "47a39787-6ccf-4624-a8b2-0d24f5c8c783")
+		)
+		(pin "09"
+			(uuid "c0d08117-fb66-4ae7-aa94-0f0685668132")
+		)
+		(pin "10"
+			(uuid "74fb0dfb-b499-43ae-913c-fda042ee7b68")
+		)
+		(pin "11"
+			(uuid "cf7a4ed8-bd93-4df5-bf5f-b78467f12236")
+		)
+		(pin "12"
+			(uuid "58f9692c-1716-4889-a8eb-68b78bd087b4")
+		)
+		(pin "13"
+			(uuid "4c5f3f5f-01b1-4bdc-bb9d-6a3c0e123ab8")
+		)
+		(pin "14"
+			(uuid "f4172bce-a18a-429e-b298-ab4e533ab412")
+		)
+		(pin "15"
+			(uuid "42a9ab7c-9d33-4537-bfe6-b70a837d1091")
+		)
+		(pin "16"
+			(uuid "bfd53eed-ef83-4857-a2a5-a6704713d8df")
+		)
+		(pin "17"
+			(uuid "a2c7d437-3c23-4c1e-9e03-241f4559ac9e")
+		)
+		(pin "18"
+			(uuid "ebc69f47-b04a-4498-9219-f7a17adf2fa3")
+		)
+		(pin "19"
+			(uuid "5c62bbc6-4918-49fd-9720-049e418ddb00")
+		)
+		(pin "20"
+			(uuid "851de9bb-2d61-46a8-92d4-fc544dfad46f")
+		)
+		(pin "05"
+			(uuid "dcc071cd-8ecf-4d72-8290-dc41df9ef32c")
+		)
+		(pin "04"
+			(uuid "aa7c6013-3c51-4117-9da3-faaba665b98f")
+		)
+		(pin "03"
+			(uuid "0897432b-6af8-4a06-a9c4-c1db74d35c7e")
+		)
+		(pin "02"
+			(uuid "40f0ffe8-7004-4f82-b2cb-7249c35b401a")
+		)
+		(instances
+			(project "F_PANEL Shim"
+				(path "/a89dfb19-e5f5-40ef-8ff3-915d098ccab5"
+					(reference "J3")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(sheet_instances
+		(path "/"
+			(page "1")
+		)
+	)
+)

@@ -1,0 +1,65 @@
+Plugin v0.0.1 running on KiCad 8.0.1 and Python 3.9.13 (v3.9.13:6de2ca5339, May 17 2022, 11:37:23) 
+[Clang 13.0.0 (clang-1300.0.29.30)] on darwin.
+Imported /Users/mwg/code/EE Projects 2022-/ESP32-Aorus-Control/USBHIDKey/USBHIDKey.kicad_pcb, with 57 footprints, 511 tracks, and 27 drawings.
+Root (+ PCB /Users/mwg/code/EE Projects 2022-/ESP32-Aorus-Control/USBHIDKey/USBHIDKey.kicad_pcb)
+├─ USB + UART
+├─ Power
+├─ ESP32
+PCB /Users/mwg/code/EE Projects 2022-/ESP32-Aorus-Control/USBHIDKey/USBHIDKey.kicad_pcb
+  /ec23b54b/dedea0f9: S5
+  /b32af74e/8a91e04b: TP3
+  /ec23b54b/7baa90c4: R17
+  /ec23b54b/20bb05eb: R16
+  /ec23b54b/bbd6188c: D9
+  /ec23b54b/4521f7bc: D8
+  /b32af74e/b5017895: C3
+  /b32af74e/d8ad38b8: C4
+  /b32af74e/4776af86: L1
+  /395562bb/10d2d8b2: D4
+  /395562bb/da7445f0: J2
+  /395562bb/11be0073: R12
+  /395562bb/6ed2d339: Q1
+  /395562bb/4b3defe1: R5
+  /ec23b54b/d8a02605: S2
+  /395562bb/fbd52b49: R11
+  /395562bb/225f881f: R6
+  /395562bb/aac28b40: D3
+  /b32af74e/5d757755: C6
+  /395562bb/5727307d: R3
+  /395562bb/c108638e: R2
+  /ec23b54b/01476a27: R4
+  /395562bb/f7acccc9: D1
+  /395562bb/5d355505: U4
+  /395562bb/c54c8939: C1
+  /ec23b54b/7ae8b9ce: S4
+  /b32af74e/75c14f6a: R8
+  /3dadd626: H1
+  /b32af74e/4979822d: C5
+  /b32af74e/80e6811f: TP1
+  /b32af74e/36caae09: R7
+  /ec23b54b/0af7b60a: U6
+  /395562bb/0e26272d: J1
+  /ec23b54b/79182789: S3
+  /b32af74e/72192051: R9
+  /5a2e1e52: H4
+  /395562bb/e07ea77d: C2
+  /b32af74e/c78c63ce: TP2
+  /395562bb/0bb9c616: R1
+  /395562bb/61ef038d: C7
+  /b32af74e/21a25513: R10
+  /ec23b54b/baf2234e: U1
+  /395562bb/a014ebbc: D7
+  /395562bb/0f28fca1: Q2
+  /ec23b54b/eefbbaec: S1
+  /cca3301f: H2
+  /ff386733: H3
+  /395562bb/6ea71f6f: U2
+  /395562bb/be8dffae: U3
+  /395562bb/8200bd9e: D6
+  /395562bb/537b52d6: C8
+  /395562bb/70d2dd37: D2
+  /b32af74e/cd842587: U5
+  /ec23b54b/04c6c7fc: J3
+  /b32af74e/ec9690a5: D5
+  /395562bb/60bb9a30: R13
+  /b32af74e/18ccff0f: Q3

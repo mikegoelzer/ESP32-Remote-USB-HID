@@ -1,0 +1,227 @@
+(footprint "BM04B-SRSS-TB_LFSN_"
+	(version 20240108)
+	(generator "pcbnew")
+	(generator_version "8.0")
+	(layer "F.Cu")
+	(descr "BM04B-SRSS-TB(LFSN)")
+	(tags "Connector")
+	(property "Reference" "J**"
+		(at 2.689 -0.686 0)
+		(layer "F.SilkS")
+		(uuid "1ca6f1f8-d2d4-4b00-941e-f1162db04d6b")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.254)
+			)
+		)
+	)
+	(property "Value" "BM04B"
+		(at 2.7686 2.667 0)
+		(layer "F.SilkS")
+		(hide yes)
+		(uuid "12a08f77-d259-4402-aaa4-122803ab755b")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.254)
+			)
+		)
+	)
+	(property "Footprint" ""
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "e3e83dd0-8ba3-4133-a987-384288a327bf")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(property "Datasheet" ""
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "7bc3b7bc-1b53-4bd9-aa16-7aca8070d0e6")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(property "Description" ""
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "fca606a1-24d3-4c43-ab49-eb57ea50ad23")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(attr smd)
+	(fp_line
+		(start 0 0)
+		(end 0 -0.928)
+		(stroke
+			(width 0.254)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "03610dcd-0b6e-48bb-b6b1-68f3dfcdc784")
+	)
+	(fp_line
+		(start 0 0.1)
+		(end 0.987 0.1)
+		(stroke
+			(width 0.254)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "226e3ccb-c2a3-486c-8443-3527058ffd78")
+	)
+	(fp_line
+		(start 1.113 -2.8)
+		(end 4.901 -2.8)
+		(stroke
+			(width 0.254)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "c1744e96-0a22-4471-a9a1-561ef27f54d7")
+	)
+	(fp_line
+		(start 6 0.1)
+		(end 4.955 0.1)
+		(stroke
+			(width 0.254)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "d96f0da5-b575-4455-98bf-7f9158c65b4b")
+	)
+	(fp_line
+		(start 6 0.1)
+		(end 6 -1.009)
+		(stroke
+			(width 0.254)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "eaf68fb1-e2d1-4907-ad46-b1130e5d3fe8")
+	)
+	(fp_circle
+		(center 0.689 1.219)
+		(end 0.689 1.282)
+		(stroke
+			(width 0.254)
+			(type solid)
+		)
+		(fill none)
+		(layer "F.SilkS")
+		(uuid "4084aebc-8b0c-4e9b-acd0-6d41df22446b")
+	)
+	(fp_line
+		(start 0 -2.8)
+		(end 6 -2.8)
+		(stroke
+			(width 0.254)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "d8654b85-58d9-4e56-9ad7-e58a6432a18b")
+	)
+	(fp_line
+		(start 0 0.1)
+		(end 0 -2.8)
+		(stroke
+			(width 0.254)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "fab71652-7d77-4b7a-9fc2-9bf21d4476b1")
+	)
+	(fp_line
+		(start 6 -2.8)
+		(end 6 0.1)
+		(stroke
+			(width 0.254)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "d29174d1-d63e-42f9-874a-3b0d7dd28e7d")
+	)
+	(fp_line
+		(start 6 0.1)
+		(end 0 0.1)
+		(stroke
+			(width 0.254)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "7dd4f243-c574-4d80-8f40-94e8ac9e6cda")
+	)
+	(fp_text user "${REFERENCE}"
+		(at 2.8702 -4.2672 0)
+		(layer "F.Fab")
+		(uuid "03912dc3-a550-4225-8ba3-2a9c0e48579f")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.254)
+			)
+		)
+	)
+	(pad "1" smd rect
+		(at 1.5 0.45)
+		(size 0.6 1.55)
+		(layers "F.Cu" "F.Paste" "F.Mask")
+		(uuid "982e810f-7e8d-495d-91d0-d5276ef19e75")
+	)
+	(pad "2" smd rect
+		(at 2.5 0.45)
+		(size 0.6 1.55)
+		(layers "F.Cu" "F.Paste" "F.Mask")
+		(uuid "187c9791-0f49-4f42-8720-24c71ee0c3a7")
+	)
+	(pad "3" smd rect
+		(at 3.5 0.45)
+		(size 0.6 1.55)
+		(layers "F.Cu" "F.Paste" "F.Mask")
+		(uuid "be8b82cc-f0d1-4106-b6b1-f6fc9201706d")
+	)
+	(pad "4" smd rect
+		(at 4.5 0.45)
+		(size 0.6 1.55)
+		(layers "F.Cu" "F.Paste" "F.Mask")
+		(uuid "5dba35ac-d4ee-4b85-ae2d-ed70bd4049bc")
+	)
+	(pad "5" smd rect
+		(at 0.2 -2.075)
+		(size 1.2 1.8)
+		(layers "F.Cu" "F.Paste" "F.Mask")
+		(uuid "5c63e8a8-4826-417f-b8ff-a34aa2160ece")
+	)
+	(pad "6" smd rect
+		(at 5.8 -2.075)
+		(size 1.2 1.8)
+		(layers "F.Cu" "F.Paste" "F.Mask")
+		(uuid "7d63f1af-ae85-49a7-81d7-603994c3e60e")
+	)
+	(model "/Users/mwg/code/EE Projects 2022-/ESP32-Aorus-Control/Parts/JST SH Series Receptacle Vertical - BM04B-SRSS-TB_LF_SN/BM04B-SRSS-TB_LF__SN_/3D/BM04B-SRSS-TB_LF__SN_.stp"
+		(offset
+			(xyz 54.31000056 13.10000018 -20.45000046)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz -90 0 0)
+		)
+	)
+)

@@ -1,0 +1,118 @@
+menu "Wifi+HTTPD+GPIO Configuration"
+
+    orsource "$IDF_PATH/examples/common_components/env_caps/$IDF_TARGET/Kconfig.env_caps"
+
+    # 
+    # Note: After making changes to this file, run 
+    #    rm sdkconfig
+    #    idf.py clean 
+    # to ensure the changes take effect.
+    #
+
+    config EXAMPLE_WIFI_SSID
+        string "WiFi SSID"
+        default n
+        help
+            SSID (network name) for the example to connect to.
+
+    config EXAMPLE_WIFI_PASSWORD
+        string "WiFi Password"
+        default n
+        help
+            WiFi password (WPA or WPA2) for the example to use.
+
+    config EXAMPLE_BASIC_AUTH
+        bool "Basic Authentication"
+        default n
+        help
+            Not implemented; must be 'n'
+
+    config HTTPD_LISTEN_PORT
+        int "Port on which http server listens"
+        default 52000
+        help
+            Port on which http server listens
+
+    config HTTPD_MAX_REQ_HDR_LEN
+        int "Max request header len"
+        default 768
+        help
+            The maximum length of the request header.
+    
+    config HTTPD_MAX_URI_LEN
+        int "Max URI len"
+        default 512
+        help
+            The maximum length of the URI.
+
+    config GPIO_INPUT_HDD_ACTIVE
+        int "GPIO input pin 34 (for HDD ACT '+' from motherboard)"
+        range ENV_GPIO_RANGE_MIN ENV_GPIO_IN_RANGE_MAX
+        default 34
+        help
+            GPIO pin connected to motherboard HDD activity plus.
+
+    config TEST_GPIO_INPUT_BTN_LEFT
+        int "GPIO input pin 18 (for testing with buttons only)"
+        range ENV_GPIO_RANGE_MIN ENV_GPIO_IN_RANGE_MAX
+        default 18
+        help
+            GPIO pin connected to left (power cycle) button.
+
+    config TEST_GPIO_INPUT_BTN_RIGHT
+        int "GPIO input pin 19 (for testing with buttons only)"
+        range ENV_GPIO_RANGE_MIN ENV_GPIO_IN_RANGE_MAX
+        default 19
+        help
+            GPIO pin connected to right (reset) button.
+
+    config GPIO_OUTPUT_RGB_RED
+        int "GPIO output pin for RGB RED LED"
+        range ENV_GPIO_RANGE_MIN ENV_GPIO_OUT_RANGE_MAX
+        default 0
+        help
+            GPIO pin number connect to RGB LED RED
+
+    config GPIO_OUTPUT_RGB_GREEN
+        int "GPIO output pin for RGB GREEN LED"
+        range ENV_GPIO_RANGE_MIN ENV_GPIO_OUT_RANGE_MAX
+        default 2
+        help
+            GPIO pin number connect to RGB LED GREEN
+
+    config GPIO_OUTPUT_RGB_BLUE
+        int "GPIO output pin for RGB BLUE LED"
+        range ENV_GPIO_RANGE_MIN ENV_GPIO_OUT_RANGE_MAX
+        default 4
+        help
+            GPIO pin number connect to RGB LED BLUE
+        
+    config GPIO_OUTPUT_TEENSY_B0
+        int "GPIO output pin to signal request for Teensy B0 (entry of the password + ENTER)"
+        range ENV_GPIO_RANGE_MIN ENV_GPIO_OUT_RANGE_MAX
+        default 21
+        help
+            GPIO output pin to signal request for Teensy B0 (entry of the password + ENTER)
+
+    config GPIO_OUTPUT_TEENSY_B1
+        int "GPIO output pin to signal request for Teensy B1 (entry of right arrow + ENTER)"
+        range ENV_GPIO_RANGE_MIN ENV_GPIO_OUT_RANGE_MAX
+        default 22
+        help
+            GPIO output pin to signal request for Teensy B1 (entry of right arrow + ENTER)
+
+    config GPIO_OUTPUT_MOBO_POWER
+        int "GPIO output pin to to pull down power on the motherboard"
+        range ENV_GPIO_RANGE_MIN ENV_GPIO_OUT_RANGE_MAX
+        default 26
+        help
+            GPIO output pin to to pull down power on the motherboard
+
+    config GPIO_OUTPUT_MOBO_RESET
+        int "GPIO output pin to pull down reset pin on motherboard"
+        range ENV_GPIO_RANGE_MIN ENV_GPIO_OUT_RANGE_MAX
+        default 27
+        help
+            GPIO output pin to pull down reset pin on motherboard
+        
+endmenu

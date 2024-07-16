@@ -1,0 +1,9 @@
+Manufacturer=JST (JAPAN SOLDERLESS TERMINALS)
+PartNumber=BM04B-SRSS-TB(LF)(SN)
+PartCategory=Connector
+PackageCategory=Other
+PinCount=4
+Version=1.1
+Released=2019-05-02 21:36:15
+Downloaded=2024-06-24 19:34:04
+3D=Y
