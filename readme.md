@@ -1,7 +1,7 @@
 # USB HID Keyboard over Wifi
 
 <p align="center">
-  <img src="images/USBHIDKey-v0.1-3d.png" alt="USB HID Keyboard PCB 3D render">
+  <img src="images/USB-Kybd-v0.1-3d.png" alt="USB HID Keyboard PCB 3D render">
 </p>
 
 This project is the hardware and firmware for an ESP32-based remote USB keyboard. It's a dongle that plugs into a USB port on a computer and sends keystrokes that it receives over Wifi.  The connector `J3` also allows for wiring up to the PC motherboard's `F_PANEL` control pins, allowing for remote on/off and remote reboot.  
