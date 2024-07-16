@@ -9255,13 +9255,13 @@
 		(descr "BM04B-SRSS-TB(LFSN)")
 		(tags "Connector")
 		(property "Reference" "J3"
-			(at 3.2018 -1.7344 180)
+			(at -1.7004 0.1706 180)
 			(layer "F.SilkS")
 			(uuid "aa219977-860b-40fb-b3d0-cbd9fa95ece1")
 			(effects
 				(font
-					(size 0.762 0.762)
-					(thickness 0.1524)
+					(size 1.27 1.27)
+					(thickness 0.254)
 					(bold yes)
 				)
 			)
@@ -9457,7 +9457,7 @@
 			(uuid "6c6e10fd-2d06-4fec-b431-878174141862")
 		)
 		(fp_text user "${REFERENCE}"
-			(at 2.8702 -4.2672 180)
+			(at -1.675 0.196 180)
 			(layer "F.Fab")
 			(uuid "0a59533d-228d-47c3-9a93-eadab54bff5d")
 			(effects
