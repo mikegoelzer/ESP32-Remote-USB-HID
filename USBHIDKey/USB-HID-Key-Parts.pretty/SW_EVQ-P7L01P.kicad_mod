@@ -357,7 +357,7 @@
 		(solder_mask_margin 0.102)
 		(uuid "c0f78860-5c03-493d-a5e2-1ec2c7db837d")
 	)
-	(model "/Users/mwg/code/EE Projects 2022-/ESP32-Aorus-Control/Parts/EVQ-P7L01P/EVQ-P7L01P.step"
+	(model "/Users/mwg/code/EE Projects 2022-/ESP32-Remote-USB-HID/Parts/EVQ-P7L01P/EVQ-P7L01P.step"
 		(offset
 			(xyz 0 0 0)
 		)
