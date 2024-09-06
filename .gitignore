@@ -1,4 +1,7 @@
 .DS_Store
+
+# Kicad internal bookkeeping files
 **/*-backups/
 **/*.kicad_prl
 **/fp-info-cache
+**/*.lck
