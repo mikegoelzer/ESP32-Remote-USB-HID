@@ -1,2 +1,4 @@
 .DS_Store
-USBHIDKey/USBHIDKey-backups
+**/*-backups/
+**/*.kicad_prl
+**/fp-info-cache
