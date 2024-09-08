@@ -2663,7 +2663,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "100k"
+		(property "Value" "453k"
 			(at 140.335 72.3899 0)
 			(effects
 				(font
@@ -2690,7 +2690,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "RES 100K OHM 1% 1/20W 0201"
+		(property "Description" "RES 453K OHM 1% 1/20W 0201"
 			(at 138.43 71.12 0)
 			(effects
 				(font
@@ -2699,7 +2699,7 @@
 				(hide yes)
 			)
 		)
-		(property "MPN" "RC0201FR-07100KL"
+		(property "MPN" "RC0201FR-07453KL"
 			(at 138.43 71.12 0)
 			(effects
 				(font
@@ -2708,7 +2708,7 @@
 				(hide yes)
 			)
 		)
-		(property "Digikey" "https://www.digikey.com/en/products/detail/yageo/RC0201FR-07100KL/1948859"
+		(property "Digikey" "https://www.digikey.com/en/products/detail/yageo/RC0201FR-07453KL/5280540"
 			(at 138.43 71.12 0)
 			(effects
 				(font
@@ -3233,7 +3233,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "453k"
+		(property "Value" "100k"
 			(at 140.335 84.4549 0)
 			(effects
 				(font
@@ -3260,7 +3260,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "RES 453K OHM 1% 1/20W 0201"
+		(property "Description" "RES 100K OHM 1% 1/20W 0201"
 			(at 138.43 83.185 0)
 			(effects
 				(font
@@ -3269,7 +3269,7 @@
 				(hide yes)
 			)
 		)
-		(property "MPN" "RC0201FR-07453KL"
+		(property "MPN" "RC0201FR-07100KL"
 			(at 138.43 83.185 0)
 			(effects
 				(font
@@ -3278,7 +3278,7 @@
 				(hide yes)
 			)
 		)
-		(property "Digikey" "https://www.digikey.com/en/products/detail/yageo/RC0201FR-07453KL/5280540"
+		(property "Digikey" "https://www.digikey.com/en/products/detail/yageo/RC0201FR-07100KL/1948859"
 			(at 138.43 83.185 0)
 			(effects
 				(font

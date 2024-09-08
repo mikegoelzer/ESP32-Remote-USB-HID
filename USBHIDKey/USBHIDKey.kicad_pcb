@@ -885,7 +885,7 @@
 			(roundrect_rratio 0.25)
 			(net 6 "VBUS_UART")
 			(pinfunction "VBUS")
-			(pintype "power_out")
+			(pintype "power_in")
 			(uuid "1351769e-828b-4753-8b86-d51965402346")
 		)
 		(pad "2" smd roundrect
@@ -13439,7 +13439,7 @@
 				(justify mirror)
 			)
 		)
-		(property "Value" "453k"
+		(property "Value" "100k"
 			(at 0 -1.05 180)
 			(layer "B.Fab")
 			(hide yes)
@@ -13478,7 +13478,7 @@
 				(justify mirror)
 			)
 		)
-		(property "Description" "RES 453K OHM 1% 1/20W 0201"
+		(property "Description" "RES 100K OHM 1% 1/20W 0201"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "B.Fab")
@@ -13491,7 +13491,7 @@
 				(justify mirror)
 			)
 		)
-		(property "MPN" "RC0201FR-07453KL"
+		(property "MPN" "RC0201FR-07100KL"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "B.Fab")
@@ -13505,7 +13505,7 @@
 				(justify mirror)
 			)
 		)
-		(property "Digikey" "https://www.digikey.com/en/products/detail/yageo/RC0201FR-07453KL/5280540"
+		(property "Digikey" "https://www.digikey.com/en/products/detail/yageo/RC0201FR-07100KL/1948859"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "B.Fab")
@@ -14314,7 +14314,7 @@
 				(justify mirror)
 			)
 		)
-		(property "Value" "100k"
+		(property "Value" "453k"
 			(at 0 -1.05 0)
 			(layer "B.Fab")
 			(hide yes)
@@ -14353,7 +14353,7 @@
 				(justify mirror)
 			)
 		)
-		(property "Description" "RES 100K OHM 1% 1/20W 0201"
+		(property "Description" "RES 453K OHM 1% 1/20W 0201"
 			(at 0 0 180)
 			(unlocked yes)
 			(layer "B.Fab")
@@ -14366,7 +14366,7 @@
 				(justify mirror)
 			)
 		)
-		(property "MPN" "RC0201FR-07100KL"
+		(property "MPN" "RC0201FR-07453KL"
 			(at 0 0 180)
 			(unlocked yes)
 			(layer "B.Fab")
@@ -14380,7 +14380,7 @@
 				(justify mirror)
 			)
 		)
-		(property "Digikey" "https://www.digikey.com/en/products/detail/yageo/RC0201FR-07100KL/1948859"
+		(property "Digikey" "https://www.digikey.com/en/products/detail/yageo/RC0201FR-07453KL/5280540"
 			(at 0 0 180)
 			(unlocked yes)
 			(layer "B.Fab")
