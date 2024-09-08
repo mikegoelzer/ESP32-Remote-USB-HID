@@ -335,25 +335,23 @@
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
-			(property "Reference" "J"
-				(at -5.08 11.43 0)
+			(property "Reference" "J2"
+				(at 0 12.065 0)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(justify left)
 				)
 			)
 			(property "Value" "USB_B_Micro"
-				(at -5.08 8.89 0)
+				(at 0 9.525 0)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(justify left)
 				)
 			)
-			(property "Footprint" ""
+			(property "Footprint" "Connector_USB:USB_Micro-B_Amphenol_10118193-0001LF_Horizontal"
 				(at 3.81 -1.27 0)
 				(effects
 					(font
@@ -362,7 +360,7 @@
 					(hide yes)
 				)
 			)
-			(property "Datasheet" "~"
+			(property "Datasheet" "https://cdn.amphenol-cs.com/media/wysiwyg/files/documentation/datasheet/inputoutput/io_usb_micro.pdf"
 				(at 3.81 -1.27 0)
 				(effects
 					(font
@@ -372,6 +370,24 @@
 				)
 			)
 			(property "Description" "USB Micro Type B connector"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "MPN" "10118193-0001LF"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Digikey" "https://www.digikey.com/en/products/detail/amphenol-cs-fci/10118193-0001LF/2785388"
 				(at 0 0 0)
 				(effects
 					(font
@@ -573,7 +589,7 @@
 				)
 			)
 			(symbol "USB_B_Micro_1_1"
-				(pin power_out line
+				(pin power_in line
 					(at 7.62 5.08 180)
 					(length 2.54)
 					(name "VBUS"
@@ -4931,7 +4947,7 @@
 				)
 			)
 		)
-		(property "Value" "1k"
+		(property "Value" "330"
 			(at 159.512 175.26 90)
 			(effects
 				(font
@@ -4966,7 +4982,7 @@
 				(hide yes)
 			)
 		)
-		(property "MPN" "RC0201FR-071KL"
+		(property "MPN" "RC0201FR-07330KL"
 			(at 159.385 175.26 0)
 			(effects
 				(font
@@ -4975,7 +4991,7 @@
 				(hide yes)
 			)
 		)
-		(property "Digikey" "https://www.digikey.com/en/products/detail/yageo/RC0201FR-071KL/3202389"
+		(property "Digikey" "https://www.digikey.com/en/products/detail/yageo/RC0201FR-07330KL/5280463"
 			(at 159.385 175.26 0)
 			(effects
 				(font
@@ -5864,7 +5880,7 @@
 		(dnp no)
 		(uuid "5727307d-2ba7-4de6-bbd1-72f7e893328c")
 		(property "Reference" "R3"
-			(at 124.714 119.634 0)
+			(at 123.952 120.904 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5873,7 +5889,7 @@
 			)
 		)
 		(property "Value" "1K"
-			(at 122.682 122.174 90)
+			(at 122.682 122.682 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6042,7 +6058,7 @@
 		(dnp no)
 		(uuid "60bb9a30-d78c-4e1f-939e-7c6bf801f588")
 		(property "Reference" "R13"
-			(at 173.863 176.403 90)
+			(at 173.736 177.038 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6050,8 +6066,8 @@
 				(justify left)
 			)
 		)
-		(property "Value" "1k"
-			(at 171.45 176.276 90)
+		(property "Value" "330"
+			(at 171.45 177.038 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6086,7 +6102,7 @@
 				(hide yes)
 			)
 		)
-		(property "MPN" "RC0201FR-071KL"
+		(property "MPN" "RC0201FR-07330KL"
 			(at 171.45 175.26 0)
 			(effects
 				(font
@@ -6095,7 +6111,7 @@
 				(hide yes)
 			)
 		)
-		(property "Digikey" "https://www.digikey.com/en/products/detail/yageo/RC0201FR-071KL/3202389"
+		(property "Digikey" "https://www.digikey.com/en/products/detail/yageo/RC0201FR-07330KL/5280463"
 			(at 171.45 175.26 0)
 			(effects
 				(font
@@ -6976,7 +6992,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "LED_SMD:LED_0201_0603Metric"
+		(property "Footprint" "LED_SMD:LED_0603_1608Metric"
 			(at 159.385 168.275 0)
 			(effects
 				(font
@@ -7193,7 +7209,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "LED_SMD:LED_0201_0603Metric"
+		(property "Footprint" "LED_SMD:LED_0603_1608Metric"
 			(at 171.45 168.275 0)
 			(effects
 				(font
