@@ -4931,7 +4931,7 @@
 				)
 			)
 		)
-		(property "Value" "1k"
+		(property "Value" "330"
 			(at 159.512 175.26 90)
 			(effects
 				(font
@@ -4966,7 +4966,7 @@
 				(hide yes)
 			)
 		)
-		(property "MPN" "RC0201FR-071KL"
+		(property "MPN" "RC0201FR-07330KL"
 			(at 159.385 175.26 0)
 			(effects
 				(font
@@ -4975,7 +4975,7 @@
 				(hide yes)
 			)
 		)
-		(property "Digikey" "https://www.digikey.com/en/products/detail/yageo/RC0201FR-071KL/3202389"
+		(property "Digikey" "https://www.digikey.com/en/products/detail/yageo/RC0201FR-07330KL/5280463"
 			(at 159.385 175.26 0)
 			(effects
 				(font
@@ -6042,7 +6042,7 @@
 		(dnp no)
 		(uuid "60bb9a30-d78c-4e1f-939e-7c6bf801f588")
 		(property "Reference" "R13"
-			(at 173.863 176.403 90)
+			(at 173.736 177.038 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6050,8 +6050,8 @@
 				(justify left)
 			)
 		)
-		(property "Value" "1k"
-			(at 171.45 176.276 90)
+		(property "Value" "330"
+			(at 171.45 177.038 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6086,7 +6086,7 @@
 				(hide yes)
 			)
 		)
-		(property "MPN" "RC0201FR-071KL"
+		(property "MPN" "RC0201FR-07330KL"
 			(at 171.45 175.26 0)
 			(effects
 				(font
@@ -6095,7 +6095,7 @@
 				(hide yes)
 			)
 		)
-		(property "Digikey" "https://www.digikey.com/en/products/detail/yageo/RC0201FR-071KL/3202389"
+		(property "Digikey" "https://www.digikey.com/en/products/detail/yageo/RC0201FR-07330KL/5280463"
 			(at 171.45 175.26 0)
 			(effects
 				(font
