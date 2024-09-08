@@ -18770,7 +18770,7 @@
 			(justify left bottom)
 		)
 	)
-	(gr_text "Rev 0.1\nMike Goelzer\nJuly 2024"
+	(gr_text "Rev 2\nMike Goelzer\nSept 2024"
 		(at 212.8012 68.453 0)
 		(layer "F.SilkS")
 		(uuid "6162b57b-0ce5-4778-9d8f-4c121492721b")
