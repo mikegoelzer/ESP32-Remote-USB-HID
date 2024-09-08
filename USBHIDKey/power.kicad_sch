@@ -2238,17 +2238,6 @@
 		)
 		(uuid "f13eba43-9ed7-4fe5-ba33-aceb1eef6fd9")
 	)
-	(label "VIN"
-		(at 74.93 66.04 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 0.635 0.635)
-			)
-			(justify left bottom)
-		)
-		(uuid "06c98aee-bfd0-46ad-94c7-007d2f2062bc")
-	)
 	(label "SW"
 		(at 105.41 66.04 0)
 		(fields_autoplaced yes)
