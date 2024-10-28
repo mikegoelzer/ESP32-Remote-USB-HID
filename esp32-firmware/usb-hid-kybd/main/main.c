@@ -60,13 +60,6 @@
 // Output pins
 //
 
-// Signals to Teensy
-// Default:  pin 21 sends user/password HID keyboard request (Teensy B0)
-//           pin 22 sends arrow/enter HID keyboard request (Teensy B1)
-#define GPIO_OUTPUT_TEENSY_B0         CONFIG_GPIO_OUTPUT_TEENSY_B0
-#define GPIO_OUTPUT_TEENSY_B1         CONFIG_GPIO_OUTPUT_TEENSY_B1
-#define GPIO_OUTPUT_PIN_SEL_TEENSY    ((1ULL<<GPIO_OUTPUT_TEENSY_B0) | (1ULL<<GPIO_OUTPUT_TEENSY_B1))
-
 // Signals to Motherboard
 // Defualts:  pin 26 output active low => power on/off
 //            pin 27 output active low => reset
@@ -75,13 +68,11 @@
 #define GPIO_OUTPUT_PIN_SEL_MOBO     ((1ULL<<GPIO_OUTPUT_MOBO_POWER) | (1ULL<<GPIO_OUTPUT_MOBO_RESET))
 
 // Signals to status LEDs:
-//   RED = mobo reset (pin 0)
+//   AMBER = mobo reset (pin 0)
 //   GREEN = system ready (pin 2)
-//   BLUE = mobo power off/on (pin 4)
-#define GPIO_OUTPUT_RED               CONFIG_GPIO_OUTPUT_RGB_RED
+#define GPIO_OUTPUT_AMBER             CONFIG_GPIO_OUTPUT_RGB_AMBER
 #define GPIO_OUTPUT_GREEN             CONFIG_GPIO_OUTPUT_RGB_GREEN
-#define GPIO_OUTPUT_BLUE              CONFIG_GPIO_OUTPUT_RGB_BLUE
-#define GPIO_OUTPUT_PIN_SEL_LEDS      ((1ULL<<GPIO_OUTPUT_RED) | (1ULL<<GPIO_OUTPUT_GREEN) | (1ULL<<GPIO_OUTPUT_BLUE))
+#define GPIO_OUTPUT_PIN_SEL_LEDS      ((1ULL<<GPIO_OUTPUT_AMBER) | (1ULL<<GPIO_OUTPUT_GREEN))
 
 //
 // Input pins
@@ -94,11 +85,13 @@
 #define GPIO_INPUT_SENSING_HDD_ACTIVE_PIN_SEL   (1ULL<<GPIO_INPUT_HDD_ACTIVE)
 
 // Buttons for manual triggering of Teensy
-// Default:  pin 18 - left button (power cycle)
-//           pin 19 - right button (reset)
-#define GPIO_INPUT_TEST_BTN_LEFT     CONFIG_TEST_GPIO_INPUT_BTN_LEFT
-#define GPIO_INPUT_TEST_BTN_RIGHT    CONFIG_TEST_GPIO_INPUT_BTN_RIGHT
-#define GPIO_INPUT_PIN_SEL           ((1ULL<<GPIO_INPUT_TEST_BTN_LEFT) | (1ULL<<GPIO_INPUT_TEST_BTN_RIGHT))
+// Default:  pin 14 - OK button
+//           pin 11 - power button
+//           pin 10 - reset button
+#define GPIO_INPUT_BTN_OK            CONFIG_GPIO_INPUT_BTN_OK
+#define GPIO_INPUT_BTN_POWER         CONFIG_GPIO_INPUT_BTN_POWER
+#define GPIO_INPUT_BTN_RESET         CONFIG_GPIO_INPUT_BTN_RESET
+#define GPIO_INPUT_PIN_SEL           ((1ULL<<GPIO_INPUT_BTN_OK) | (1ULL<<GPIO_INPUT_BTN_POWER) | (1ULL<<GPIO_INPUT_BTN_RESET))
 
 #define ESP_INTR_FLAG_DEFAULT 0
 
@@ -121,9 +114,9 @@ static void IRAM_ATTR gpio_isr_handler(void* arg)
     uint32_t gpio_num = (uint32_t) arg;
     // xQueueSendFromISR(gpio_evt_queue, &gpio_num, NULL);
 
-    if (gpio_num==GPIO_INPUT_TEST_BTN_LEFT) {
+    if (gpio_num==GPIO_INPUT_BTN_POWER) {
         reqd_action_flags |= FLAGS_POWER_ON_REQD;
-    } else if (gpio_num==GPIO_INPUT_TEST_BTN_RIGHT) {
+    } else if (gpio_num==GPIO_INPUT_BTN_RESET) {
         reqd_action_flags |= FLAGS_POWER_OFF_REQD;
     }
 
@@ -376,7 +369,7 @@ void gpioTimerCallback(TimerHandle_t xTimer) {
     static int startup_delay_sec = 2;
     static bool startup_complete = false;
     if (!startup_complete && startup_delay_sec-- > 0) {
-        gpio_set_level(GPIO_OUTPUT_BLUE, 1); // blue = startup delay
+        gpio_set_level(GPIO_OUTPUT_AMBER, 1); // amber = startup delay
         printf("timer [%s]> starting up\n", get_system_state_str(system_state_str));
         return;
     } else {
@@ -385,32 +378,32 @@ void gpioTimerCallback(TimerHandle_t xTimer) {
             printf("timer [%s]> startup complete\n", get_system_state_str(system_state_str));
             reqd_action_flags = 0;
         }
-        gpio_set_level(GPIO_OUTPUT_BLUE, 0); // blue off for remainder of operation
+        gpio_set_level(GPIO_OUTPUT_AMBER, 0); // amber off for remainder of operation
     }
 
     // once we're past startup delay...
     
     // set LEDs per current system state:
-    //  - powered off:  solid red
+    //  - powered off:  solid amber
     //  - powered on:  solid green
     //  - powering up:  flashing green
-    //  - powering down: flashing red
+    //  - powering down: flashing amber
     static int flasher_cnt = 0;
     switch (system_state) {
         case STATE_SYSTEM_OFF:
-            gpio_set_level(GPIO_OUTPUT_RED, 1);
+            gpio_set_level(GPIO_OUTPUT_AMBER, 1);
             gpio_set_level(GPIO_OUTPUT_GREEN, 0);
             break;
         case STATE_SYSTEM_ON:
-            gpio_set_level(GPIO_OUTPUT_RED, 0);
+            gpio_set_level(GPIO_OUTPUT_AMBER, 0);
             gpio_set_level(GPIO_OUTPUT_GREEN, 1);
             break;
         case STATE_POWERING_ON:
-            gpio_set_level(GPIO_OUTPUT_RED, 0);
+            gpio_set_level(GPIO_OUTPUT_AMBER, 0);
             gpio_set_level(GPIO_OUTPUT_GREEN, (flasher_cnt++ % 2));
             break;
         case STATE_POWERING_OFF:
-            gpio_set_level(GPIO_OUTPUT_RED, (flasher_cnt++ % 2));
+            gpio_set_level(GPIO_OUTPUT_AMBER, (flasher_cnt++ % 2));
             gpio_set_level(GPIO_OUTPUT_GREEN, 0);
             break;
     }
@@ -711,10 +704,10 @@ static esp_err_t req_handler(httpd_req_t *req)
         httpd_resp_send(req, status_str, HTTPD_RESP_USE_STRLEN);
     } else if (req_type == HTTP_REQ_RESEND_LOGIN) {
         // send login keystrokes with teensy D0
-        gpio_set_level(GPIO_OUTPUT_TEENSY_B0, 0);
-        vTaskDelay(100 / portTICK_PERIOD_MS);
-        gpio_set_level(GPIO_OUTPUT_TEENSY_B0, 1);
-        vTaskDelay(100 / portTICK_PERIOD_MS);
+        // gpio_set_level(GPIO_OUTPUT_TEENSY_B0, 0);
+        // vTaskDelay(100 / portTICK_PERIOD_MS);
+        // gpio_set_level(GPIO_OUTPUT_TEENSY_B0, 1);
+        // vTaskDelay(100 / portTICK_PERIOD_MS);
 
         sprintf(status_str, "http [%s]> resent u/p keystrokes\n", get_system_state_str(system_state_str));
         httpd_resp_send(req, status_str, HTTPD_RESP_USE_STRLEN);
@@ -915,7 +908,7 @@ void app_main(void)
     gpio_config_t io_conf = {};
 
     //
-    // outputs for LEDs, mobo pins (active low) and teensy pins (active low)
+    // outputs for LEDs and mobo pins (active low)
     //
 
     //disable interrupt
@@ -923,7 +916,7 @@ void app_main(void)
     //set as output mode
     io_conf.mode = GPIO_MODE_OUTPUT;
     //bit mask of the pins that you want to set,e.g.GPIO21/22
-    io_conf.pin_bit_mask = GPIO_OUTPUT_PIN_SEL_LEDS | GPIO_OUTPUT_PIN_SEL_TEENSY | GPIO_OUTPUT_PIN_SEL_MOBO;
+    io_conf.pin_bit_mask = GPIO_OUTPUT_PIN_SEL_LEDS | GPIO_OUTPUT_PIN_SEL_MOBO;
     //disable pull-down mode
     io_conf.pull_down_en = 0;
     //disable/enable pull-up mode
@@ -934,10 +927,9 @@ void app_main(void)
     // these are active low; bring them high as early as possible
     gpio_set_level(GPIO_OUTPUT_MOBO_RESET, 1);
     gpio_set_level(GPIO_OUTPUT_MOBO_POWER, 1);
-    gpio_set_level(GPIO_OUTPUT_TEENSY_B0,  1);
-    gpio_set_level(GPIO_OUTPUT_TEENSY_B1,  1);
 
-
+gpio_set_level(GPIO_OUTPUT_AMBER, 1);
+gpio_set_level(GPIO_OUTPUT_GREEN, 1);
     ///////////////////////////////////////////////
     //
     // inputs setup: btns trigger on rising edges
@@ -979,9 +971,10 @@ void app_main(void)
 
     //install gpio isr service
     gpio_install_isr_service(ESP_INTR_FLAG_DEFAULT);
-    gpio_isr_handler_add(GPIO_INPUT_TEST_BTN_LEFT, gpio_isr_handler, (void*) GPIO_INPUT_TEST_BTN_LEFT);
-    gpio_isr_handler_add(GPIO_INPUT_TEST_BTN_RIGHT, gpio_isr_handler, (void*) GPIO_INPUT_TEST_BTN_RIGHT);    
-    // printf("Minimum free heap size: %"PRIu32" bytes\n", esp_get_minimum_free_heap_size());
+    gpio_isr_handler_add(GPIO_INPUT_BTN_POWER, gpio_isr_handler, (void*) GPIO_INPUT_BTN_POWER);
+    gpio_isr_handler_add(GPIO_INPUT_BTN_RESET, gpio_isr_handler, (void*) GPIO_INPUT_BTN_RESET);
+    gpio_isr_handler_add(GPIO_INPUT_BTN_OK, gpio_isr_handler, (void*) GPIO_INPUT_BTN_OK);
+    printf("Minimum free heap size: %"PRIu32" bytes\n", esp_get_minimum_free_heap_size());
 
     // Create a software timer
     gpioTimer = xTimerCreate("GPIOTimer", pdMS_TO_TICKS(1000), pdTRUE, (void *)0, gpioTimerCallback);

@@ -45,74 +45,69 @@ menu "Wifi+HTTPD+GPIO Configuration"
         help
             The maximum length of the URI.
 
+    #
+    # F_PANEL connector GPIOs
+    #
     config GPIO_INPUT_HDD_ACTIVE
-        int "GPIO input pin 34 (for HDD ACT '+' from motherboard)"
+        int "GPIO input pin 1 (for HDD ACT '+' from motherboard)"
         range ENV_GPIO_RANGE_MIN ENV_GPIO_IN_RANGE_MAX
-        default 34
+        default 1
         help
             GPIO pin connected to motherboard HDD activity plus.
-
-    config TEST_GPIO_INPUT_BTN_LEFT
-        int "GPIO input pin 18 (for testing with buttons only)"
-        range ENV_GPIO_RANGE_MIN ENV_GPIO_IN_RANGE_MAX
-        default 18
-        help
-            GPIO pin connected to left (power cycle) button.
-
-    config TEST_GPIO_INPUT_BTN_RIGHT
-        int "GPIO input pin 19 (for testing with buttons only)"
-        range ENV_GPIO_RANGE_MIN ENV_GPIO_IN_RANGE_MAX
-        default 19
-        help
-            GPIO pin connected to right (reset) button.
-
-    config GPIO_OUTPUT_RGB_RED
-        int "GPIO output pin for RGB RED LED"
-        range ENV_GPIO_RANGE_MIN ENV_GPIO_OUT_RANGE_MAX
-        default 0
-        help
-            GPIO pin number connect to RGB LED RED
-
-    config GPIO_OUTPUT_RGB_GREEN
-        int "GPIO output pin for RGB GREEN LED"
-        range ENV_GPIO_RANGE_MIN ENV_GPIO_OUT_RANGE_MAX
-        default 2
-        help
-            GPIO pin number connect to RGB LED GREEN
-
-    config GPIO_OUTPUT_RGB_BLUE
-        int "GPIO output pin for RGB BLUE LED"
-        range ENV_GPIO_RANGE_MIN ENV_GPIO_OUT_RANGE_MAX
-        default 4
-        help
-            GPIO pin number connect to RGB LED BLUE
-        
-    config GPIO_OUTPUT_TEENSY_B0
-        int "GPIO output pin to signal request for Teensy B0 (entry of the password + ENTER)"
-        range ENV_GPIO_RANGE_MIN ENV_GPIO_OUT_RANGE_MAX
-        default 21
-        help
-            GPIO output pin to signal request for Teensy B0 (entry of the password + ENTER)
-
-    config GPIO_OUTPUT_TEENSY_B1
-        int "GPIO output pin to signal request for Teensy B1 (entry of right arrow + ENTER)"
-        range ENV_GPIO_RANGE_MIN ENV_GPIO_OUT_RANGE_MAX
-        default 22
-        help
-            GPIO output pin to signal request for Teensy B1 (entry of right arrow + ENTER)
 
     config GPIO_OUTPUT_MOBO_POWER
         int "GPIO output pin to to pull down power on the motherboard"
         range ENV_GPIO_RANGE_MIN ENV_GPIO_OUT_RANGE_MAX
-        default 26
+        default 3
         help
             GPIO output pin to to pull down power on the motherboard
 
     config GPIO_OUTPUT_MOBO_RESET
         int "GPIO output pin to pull down reset pin on motherboard"
         range ENV_GPIO_RANGE_MIN ENV_GPIO_OUT_RANGE_MAX
-        default 27
+        default 2
         help
             GPIO output pin to pull down reset pin on motherboard
         
+    #
+    # Button GPIO inputs (active low)
+    #
+    config GPIO_INPUT_BTN_RESET
+        int "GPIO input pin for reset button (active low)"
+        range ENV_GPIO_RANGE_MIN ENV_GPIO_IN_RANGE_MAX
+        default 10
+        help
+            GPIO pin connected to left (power cycle) button.
+
+    config GPIO_INPUT_BTN_POWER
+        int "GPIO input pin for power button (active low)"
+        range ENV_GPIO_RANGE_MIN ENV_GPIO_IN_RANGE_MAX
+        default 11
+        help
+            GPIO pin connected to right (reset) button.
+
+    config GPIO_INPUT_BTN_OK
+        int "GPIO input pin for OK button (active low)"
+        range ENV_GPIO_RANGE_MIN ENV_GPIO_IN_RANGE_MAX
+        default 14
+        help
+            GPIO pin connected to OK button.
+        
+    #
+    # LED output GPIOs
+    #
+    config GPIO_OUTPUT_RGB_AMBER
+        int "GPIO output pin for RGB amber LED"
+        range ENV_GPIO_RANGE_MIN ENV_GPIO_OUT_RANGE_MAX
+        default 15
+        help
+            GPIO pin number connect to RGB LED amber
+
+    config GPIO_OUTPUT_RGB_GREEN
+        int "GPIO output pin for RGB green LED"
+        range ENV_GPIO_RANGE_MIN ENV_GPIO_OUT_RANGE_MAX
+        default 16
+        help
+            GPIO pin number connect to RGB LED green
+
 endmenu
