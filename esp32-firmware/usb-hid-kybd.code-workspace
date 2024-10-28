@@ -4,5 +4,13 @@
 			"path": "."
 		}
 	],
-	"settings": {}
+	"settings": {
+		"files.associations": {
+			"*.iif": "tsv",
+			"HOWTO": "plaintext",
+			"*.diamond": "makefile",
+			"*.sv": "verilog",
+			"httpd.h": "c"
+		}
+	}
 }
