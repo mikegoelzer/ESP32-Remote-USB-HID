@@ -10,7 +10,11 @@
 			"HOWTO": "plaintext",
 			"*.diamond": "makefile",
 			"*.sv": "verilog",
-			"httpd.h": "c"
+			"httpd.h": "c",
+			"freertos.h": "c",
+			"globals.h": "c",
+			"gpios.h": "c",
+			"gpio.h": "c"
 		}
 	}
 }
