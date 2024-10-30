@@ -14,7 +14,9 @@
 			"freertos.h": "c",
 			"globals.h": "c",
 			"gpios.h": "c",
-			"gpio.h": "c"
+			"gpio.h": "c",
+			"tinyusb.h": "c",
+			"hid_device.h": "c"
 		}
 	}
 }

@@ -18,6 +18,10 @@ idf.py set-target esp32s3
 source find-esp32-port.source    # sets ESP32_PORT=/dev/[whatever]
 ```
 
+```sh
+idf.py add-dependencies          # update tinyusb in managed_components subdir
+```
+
 ### (Re-)Build and Flash
 
 Build the project and flash it to the board, then run monitor tool to view serial output:
@@ -31,9 +35,10 @@ idf.py build flash monitor
 To rebuild:
 
 ```sh
-rm sdkconfig                # if Kconfig.h was changed
+rm sdkconfig                    # if Kconfig.h was changed
 idf.py clean
 idf.py set-target esp32s3
+idf.py add-dependencies
 source find-esp32-port.source   # if needed
 idf.py build
 idf.py flash monitor
