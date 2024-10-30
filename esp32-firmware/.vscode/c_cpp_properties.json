@@ -3,9 +3,12 @@
         {
             "name": "Mac",
             "includePath": [
-                "${IDF_PATH}/components/**",
-                "${IDF_PATH}/components/esp32/include",
-                "${workspaceFolder}/**"
+                "/Users/mwg/esp/esp-idf/components/**",
+                "/Users/mwg/esp/esp-idf/examples/common_components/protocol_examples_common/**",
+                "/Users/mwg/esp/esp-idf/components/esp_http_server/include",
+                "/Users/mwg/esp/esp-idf/components/newlib/platform_include",
+                "${workspaceFolder}/**",
+                "/Users/mwg/esp/esp-idf/components/newlib/platform_include"
             ],
             "defines": [],
             "macFrameworkPath": [
