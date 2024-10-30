@@ -11,7 +11,7 @@ cp sdkconfig.defaults.example sdkconfig.defaults
 
 ```sh
 get_idf
-idf.py set-target esp32
+idf.py set-target esp32s3
 ```
 
 ```sh
@@ -33,7 +33,7 @@ To rebuild:
 ```sh
 rm sdkconfig                # if Kconfig.h was changed
 idf.py clean
-idf.py set-target esp32
+idf.py set-target esp32s3
 source find-esp32-port.source   # if needed
 idf.py build
 idf.py flash monitor
