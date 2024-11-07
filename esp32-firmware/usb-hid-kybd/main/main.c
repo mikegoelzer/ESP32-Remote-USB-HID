@@ -40,6 +40,16 @@
 #include "esp_eth.h"
 #endif  // !CONFIG_IDF_TARGET_LINUX
 
+// tinyusb managed component
+#include "tinyusb.h"
+#include "class/hid/hid_device.h"
+#include "esp_private/usb_phy.h"
+
+// tinyusb hid device functions
+#include "tinyusb_hid.h"
+//TEMP:
+static void send_key_x();
+
 ///////////////////////////////////////////////////////////////////////////////
 ///
 /// System config specific #define's
@@ -68,7 +78,6 @@ static void IRAM_ATTR gpio_isr_handler(void* arg)
     } else if (gpio_num==GPIO_INPUT_BTN_RESET) {
         reqd_action_flags |= FLAGS_POWER_OFF_REQD;
     }
-
 }
 
 // static void gpio_task_example(void* arg)
@@ -304,7 +313,7 @@ void gpioTimerCallback(TimerHandle_t xTimer) {
         }
         gpio_set_level(GPIO_OUTPUT_AMBER, 0); // amber off for remainder of operation
     }
-
+    send_key_x();
     // once we're past startup delay...
 
     // set LEDs per current system state:
@@ -363,8 +372,88 @@ void gpioTimerCallback(TimerHandle_t xTimer) {
     }
 }
 
+///////////////////////////////////////////////////////////////////////////////
+///
+/// USB HID keyboard
+///
+///////////////////////////////////////////////////////////////////////////////
+static uint8_t keycode[15] = {0};
+static void send_key_x()
+{
+    uint8_t key = HID_KEY_X;
+    keycode[0] = key;
+    ESP_LOGI("USB Kybd", "Keyboard callback: %c", key - HID_KEY_A + 'a');
+    tinyusb_hid_keyboard_report(0, keycode);
+}
+
+//--------------------------------------------------------------------+
+// Device callbacks
+//--------------------------------------------------------------------+
+
+static void tusb_device_task(void *arg)
+{
+    while (1) {
+        tud_task();
+    }
+}
+
+// Invoked when device is mounted
+void tud_mount_cb(void)
+{
+    ESP_LOGI("USB Kybd", "USB Mount");
+}
+
+// Invoked when device is unmounted
+void tud_umount_cb(void)
+{
+    ESP_LOGI("USB Kybd", "USB Un-Mount");
+}
+
+// Invoked when usb bus is suspended
+// remote_wakeup_en : if host allow us  to perform remote wakeup
+// Within 7ms, device must draw an average of current less than 2.5 mA from bus
+void tud_suspend_cb(bool remote_wakeup_en)
+{
+    (void) remote_wakeup_en;
+    ESP_LOGI("USB Kybd", "USB Suspend");
+}
+
+// Invoked when usb bus is resumed
+void tud_resume_cb(void)
+{
+    ESP_LOGI("USB Kybd", "USB Resume");
+}
+
+//--------------------------------------------------------------------+
+// USB PHY config
+//--------------------------------------------------------------------+
+static void usb_phy_init(void)
+{
+    usb_phy_handle_t phy_hdl;
+    // Configure USB PHY
+    usb_phy_config_t phy_conf = {
+        .controller = USB_PHY_CTRL_OTG,
+        .otg_mode = USB_OTG_MODE_DEVICE,
+        .target = USB_PHY_TARGET_INT,
+    };
+    usb_new_phy(&phy_conf, &phy_hdl);
+}
+
 void app_main(void)
 {
+    ///////////////////////////////////////////////////////////////////////////////
+    //
+    // usb init
+    //
+    ///////////////////////////////////////////////////////////////////////////////
+    ESP_LOGI("XXXXXXXX", "testing");
+    usb_phy_init();
+#define BOARD_TUD_RHPORT 0
+    tud_init(BOARD_TUD_RHPORT);
+    xTaskCreate(tusb_device_task, "TinyUSB", 4096, NULL, 5, NULL);
+    tinyusb_hid_init();
+    send_key_x();
+
     ///////////////////////////////////////////////////////////////////////////////
     ///
     ///  Http Server

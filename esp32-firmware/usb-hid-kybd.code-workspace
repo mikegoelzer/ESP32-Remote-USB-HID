@@ -16,7 +16,11 @@
 			"gpios.h": "c",
 			"gpio.h": "c",
 			"tinyusb.h": "c",
-			"hid_device.h": "c"
+			"hid_device.h": "c",
+			"tinyusb_hid.h": "c",
+			"sdkconfig.h": "c",
+			"usb_phy.h": "c",
+			"esp_log.h": "c"
 		}
 	}
 }
